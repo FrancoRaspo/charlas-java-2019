@@ -16,7 +16,7 @@ public class PrestamoFrances extends Prestamo {
     }
 
     @Override
-    public void CalcularCuotas() {
+    public void calcularCuotas() {
 
         if (super.getCapital() == null) {
             throw new RuntimeException("Debe ingresar un valor para el capital");

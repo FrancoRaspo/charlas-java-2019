@@ -88,6 +88,9 @@ public abstract class Prestamo extends RuntimeException {
         this.cuotas.put(cuota.getNro_cuota(), cuota);
     }
     
-    public abstract void CalcularCuotas();
+   
+    
+    
+    public abstract void calcularCuotas();
 
 }
