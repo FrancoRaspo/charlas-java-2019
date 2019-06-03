@@ -1,7 +1,6 @@
 package com.eiva;
 
 import java.util.List;
-import java.util.Optional;
 
 public class App {
 
@@ -45,8 +44,7 @@ public class App {
                 )   
         .findFirst()
         .ifPresent(cuota-> System.out.println("Encontrando la cuota: " + cuota));    
-                    
-        
+                
         /*
         if (optional.isPresent()) {
             System.out.println("Encontrando la cuota: " + optional);

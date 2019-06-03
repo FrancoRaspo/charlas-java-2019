@@ -131,9 +131,12 @@ public class App {
 
         prestamosDatos.ifPresent((prestamoDato) -> {
             try {
-                PrestamoFrances prestamo = new PrestamoFrances(prestamoDato.getCapital(), prestamoDato.getNroCuotas(),
+                /*PrestamoFrances prestamo = new PrestamoFrances(prestamoDato.getCapital(), prestamoDato.getNroCuotas(),
+                        prestamoDato.getTasa(), prestamoDato.getFecha());*/
+                
+                PrestamoAleman prestamo = new PrestamoAleman(prestamoDato.getCapital(), prestamoDato.getNroCuotas(),
                         prestamoDato.getTasa(), prestamoDato.getFecha());
-                   
+                
                 LOG.trace("Calculando cuotas");
                 prestamo.calcularCuotas();
 
