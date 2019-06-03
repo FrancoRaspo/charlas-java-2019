@@ -16,9 +16,7 @@ public class App {
     public static void main(String[] args) {
 
         App app = new App();
-        LOG.info("Incializando prestamos...");
-        
-        
+        LOG.info("Incializando...");
         app.run();
 
     }
